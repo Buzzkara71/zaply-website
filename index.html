@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaply ⚡ | Onchain Tools & Vibes</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter for readability, Space Grotesk for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d0d0d; /* Matte Black */
+        }
+        h1, h2, h3, .font-grotesk {
+            font-family: 'Space Grotesk', sans-serif;
+        }
+        /* Custom Brand Colors */
+        .neon-yellow { color: #FDE047; }
+        .bg-neon-yellow { background-color: #FDE047; }
+        .hover\:bg-neon-yellow-dark:hover { background-color: #FACC15; }
+        .border-neon-yellow { border-color: #FDE047; }
+        .purple-haze { color: #C4B5FD; }
+        
+        /* Background Gradient Orb */
+        .background-orb {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 800px;
+            height: 800px;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(167, 139, 250, 0.15) 0%, rgba(167, 139, 250, 0) 60%);
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* Glassmorphism effect for cards */
+        .glass-card {
+            background: rgba(31, 41, 55, 0.3);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+        .glass-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(253, 224, 71, 0.5);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 antialiased">
+
+    <div class="background-orb"></div>
+
+    <div class="relative min-h-screen flex flex-col items-center justify-center p-4 sm:p-6 lg:p-8 z-10 overflow-hidden">
+        
+        <!-- Main container -->
+        <div class="w-full max-w-4xl mx-auto text-center">
+
+            <!-- Header: Logo and Name -->
+            <header class="mb-8">
+                <!-- Zaply Logo Image -->
+                <img src="assets/images/zaply-logo.png" alt="Zaply Logo" class="w-52 h-auto mx-auto mb-4">
+                <p class="mt-2 text-lg text-gray-400 font-grotesk">“Onchain tools & vibes. No filler.”</p>
+            </header>
+
+            <!-- Main Content: Tagline and Description -->
+            <main class="mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white leading-tight mb-6">
+                    Crypto moves fast. <br class="hidden sm:block"> <span class="neon-yellow">Zaply moves faster.</span>
+                </h2>
+
+                <!-- Core Principles Section -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 max-w-3xl mx-auto text-left">
+                    <!-- Card 1: Build in the Open -->
+                    <div class="glass-card p-6 rounded-xl">
+                        <h3 class="font-bold text-lg text-white mb-2">⚡ Build in the Open</h3>
+                        <p class="text-gray-400 text-sm">We're building for builders, degens, & normies alike. Follow our journey from day one.</p>
+                    </div>
+                    <!-- Card 2: Community Driven -->
+                    <div class="glass-card p-6 rounded-xl">
+                        <h3 class="font-bold text-lg text-white mb-2">🧪 Community Driven</h3>
+                        <p class="text-gray-400 text-sm">What should we zap next? Our roadmap is shaped by you. Alpha testers wanted.</p>
+                    </div>
+                    <!-- Card 3: Simple & Powerful -->
+                    <div class="glass-card p-6 rounded-xl">
+                        <h3 class="font-bold text-lg text-white mb-2">🔮 Simple & Powerful</h3>
+                        <p class="text-gray-400 text-sm">Onchain doesn't have to mean complex. Our tools are fun, fast, and free to use.</p>
+                    </div>
+                </div>
+            </main>
+
+            <!-- Call to Action: Farcaster Link -->
+            <div class="flex flex-col items-center">
+                <a href="https://farcaster.xyz/zaply" target="_blank" rel="noopener noreferrer" 
+                   class="flex items-center justify-center gap-3 px-8 py-4 mb-4 font-bold text-gray-900 transition-transform duration-300 ease-in-out transform bg-neon-yellow rounded-lg shadow-lg hover:scale-105 hover:bg-neon-yellow-dark">
+                    <!-- Farcaster Icon SVG -->
+                    <svg class="w-6 h-6" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M18.261 4.202H5.739a1.538 1.538 0 0 0-1.539 1.538v12.522c0 .85.688 1.538 1.539 1.538h12.522c.85 0 1.538-.688 1.538-1.538V5.74c0-.85-.688-1.538-1.538-1.538ZM8.61 16.39V7.61l7.062 4.39-7.062 4.39Z"/>
+                    </svg>
+                    <span class="font-grotesk">Follow @zaply on Farcaster</span>
+                </a>
+                <p class="text-sm text-gray-500">Join the conversation. Shape the future. Get alpha.</p>
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="absolute bottom-4 text-center w-full">
+            <p class="text-gray-600 text-sm">&copy; 2025 Zaply. Dropping soon.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
